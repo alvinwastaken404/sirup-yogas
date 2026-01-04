@@ -55,7 +55,7 @@ const slides = [
   {
     title: "JAHE SIRUP",
     variant: "Varian: jahe sirup",
-    price: "Rp 21.000",
+    price: "Rp 30.000",
     bottle: "img/hero/jahe/sirup.png",
     fruits: [
       "img/hero/jahe/ginger.png",
@@ -208,7 +208,7 @@ const slides = [
   {
     title: "JAMBU BIJI",
     variant: "Varian: jambu biji",
-    price: "Rp 21.000",
+    price: "Rp 30.000",
     bottle: "img/hero/jambu/sirup.png",
     fruits: [
       "img/hero/jambu/guava.png",
@@ -357,3 +357,4 @@ function restartAuto() {
 
 updateSlide();
 startAuto();
+
