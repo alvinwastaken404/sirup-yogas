@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogas Delima - Product</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="../img/favicon.ico">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="logo">
+      <img src="../img/logo.png" alt="Logo">
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li class="active"><a href="#">Product</a></li>
+      <li><a href="../about/index.html">About</a></li>
+    </ul>
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-left">
+      <img src="../img/family.png" alt="Family">
+    </div>
+    <div class="hero-right">
+      <h2>sirup yogas</h2>
+      <h4>Segarnya aneka rasa pilihan.</h4>
+    </div>
+  </section>
+
+  <section class="product-section">
+    <div class="product-header">
+      <h2>PRODUK KAMI</h2>
+      <div class="search-box">
+        <i class="fas fa-magnifying-glass"></i>
+        <input type="search" id="searchInput" placeholder="Search">
+      </div>
+    </div>
+    <div id="productGrid" class="product-grid"></div>
+    <div id="pagination" class="pagination"></div>
+  </section>
+
+  <footer id="footer">
+    <p>&copy; <span id="year"></span> Sirup Yogas Delima. All rights reserved</p>
+    <p>Made with <i class="fas fa-heart"></i></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

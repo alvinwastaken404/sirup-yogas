@@ -1,0 +1,463 @@
+@font-face {
+  font-family: 'Jost';
+  src: url("../fonts/jost.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: 'Made Tommy';
+  src: url("../fonts/made_tommy.otf") format(opentype);
+}
+
+@font-face {
+  font-family: 'Swirly Canalope';
+  src: url("../fonts/swirly_canalope.otf") format(opentype);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+
+html, body {
+  background: white;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 5px 25px 4px 25px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+.logo img {
+  height: 4.5rem;
+}
+
+.logo a {
+  color: white;
+  font-size: 20px;
+  text-shadow: 0 2px 4px black;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  background: #CCCCCC90;
+  padding: 8px 15px;
+  border-radius: 40px;
+  gap: 20px;
+  z-index: 3;
+}
+
+.menu li {
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+.menu li a {
+  padding: 4px 20px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+  text-shadow: 0 0px 4px black;
+}
+
+.menu li:hover a {
+  background: rgba(255, 255, 255, 1);
+  color: black;
+  text-shadow: none;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 26px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px black;
+}
+
+.detail-hero {
+  display: flex;
+  min-height: 90vh;
+}
+
+.detail-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 30px 0;
+}
+
+.image-box {
+  width: 380px;
+  aspect-ratio: 1 / 1;
+  background: rgba(255,255,255,0.15);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #55555560;
+}
+
+.image-box img {
+  height: 100%;
+  width: 70%;
+  object-fit: cover;
+}
+
+.detail-right {
+  flex: 1;
+  padding: 80px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand {
+  color: #aaa;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.detail-right h1 {
+  font-family: 'Made Tommy', sans-serif;
+  margin: 10px 0 20px;
+}
+
+.detail-right .desc {
+  max-width: 400px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-family: 'Jost', sans-serif;
+}
+
+.volume {
+  border: 1px solid black;
+  padding: 6px 12px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.volume i {
+  padding-right: 5px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.btn-wa {
+  background: #25d366;
+  border: 2px solid #25d366;
+  color: white;
+  display: flex;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 16px;
+  transition: .3s ease-in-out;
+  align-items: center;
+}
+.btn-wa i {
+  padding-right: 8px;
+  font-size: 20px;
+}
+
+.btn-wa:hover {
+  background: white;
+  color: #25d366;
+}
+
+#product {
+  background-color: white;
+}
+
+#product .product {
+  display: flex;
+  margin: 30px 50px;
+  flex-direction: column;
+}
+
+#product .product .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#product .product .heading h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Made Tommy', sans-serif;
+  letter-spacing: 2px;
+}
+
+.search-box {
+  position: relative;
+  width: 240px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 12px 8px 36px;
+  border: 2px solid black;
+  outline: none;
+  font-size: 14px;
+  text-align: left;
+}
+
+.search-box input:focus {
+  border-color: #8bc34a;
+}
+
+.search-box i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+}
+
+.produk {
+  padding: 20px;
+}
+
+.list-produk {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 25px 15px 25px 15px;
+}
+
+.list-produk::-webkit-scrollbar {
+  height: 8px;
+  display: none;
+}
+
+.list-produk::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.card {
+  min-width: 230px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: .3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info small,
+.info h4,
+.info .action p,
+.info .action button {
+  font-family: 'Jost', sans-serif;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.harga {
+  color: red;
+  font-weight: bold;
+  margin: 0;
+}
+
+.btn-beli {
+  width: 100px;
+  padding: 3px 0;
+  background: #8bc34a;
+  border: 2px solid #8bc34a;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.btn-beli:hover {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+
+.hint {
+  display: none;
+}
+
+footer {
+  padding: 40px;
+  font-weight: 600;
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+footer p {
+  font-family: 'Jost', sans-serif;
+  text-align: center;
+  text-shadow: 0 0 5px #333;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 90px;
+    left: 100%;
+    transform: translateX(-100%);
+    flex-direction: column;
+    background: rgba(255, 255, 255, .25);
+    border-radius: 0;
+    display: none;
+  }
+
+  .menu li {
+    text-align: center;
+    margin: 12px 10px;
+  }
+  .menu li a {
+    border-radius: 0;
+    color: white;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .logo {
+    padding-left: 15px;
+  }
+
+  .logo img {
+    height: 3rem;
+    transform: scale(1.4);
+    margin: 5px 20px 10px;
+  }
+
+  .detail-hero {
+    flex-direction: column;
+  }
+
+  .detail-left {
+    padding: 40px 0;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .image-box {
+    width: 280px;
+  }
+
+  .detail-right {
+    padding: 40px 24px;
+  }
+
+  #product .product {
+    margin: 20px;
+  }
+
+  #product .product .heading {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .list-produk {
+    gap: 14px;
+  }
+
+  .card {
+    min-width: 180px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .btn-beli {
+    width: 40%;
+    font-size: 12px;
+  }
+
+  .hint {
+    display: block;
+    font-family: 'Jost', sans-serif;
+    color: rgba(0, 0, 0, .5);
+  }
+
+  footer {
+    padding: 25px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}

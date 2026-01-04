@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogas Delima - Beranda</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a class="logo" href="index.html">
+      <img src="img/logo.png" alt="Logo">
+    </a>
+    <ul class="menu" id="menu">
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="product/index.html">Product</a></li>
+      <li><a href="about/index.html">About</a></li>
+    </ul>
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="hero-slide" id="heroSlide">
+      
+      <div class="sirup-image">
+        <div class="title-wrap">
+          <h1 class="title" id="heroTitle"></h1>
+        </div>
+        <div class="bottle">
+          <img class="main-img" id="heroBottle" src="img/jeruk/sirup.png">
+          <div class="fruit">
+            <img id="fruit1" class="jeruk fruit-init">
+            <img id="fruit2" class="jeruk fruit-init">
+            <img id="fruit3" class="jeruk fruit-init">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="desc">
+        <h2>SIRUP YOGAS</h2>
+        <span id="heroVariant">Varian: JERUK KEPROK</span>
+        <div class="button">
+          <a href="product/index.html">SHOP NOW</a>
+        </div>
+      </div>
+      <div class="price">
+        <h3 id="heroPrice">Rp 21.000</h3>
+      </div>
+      <div class="button-arrow">
+        <a href="#" class="arrow left" id="prev"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="#" class="arrow right" id="next"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="product">
+    <div class="product">
+      <div class="heading">
+        <h2>produk kami</h2>
+        <div class="search-box">
+          <input type="search" class="search-input" id="search" placeholder="Cari produk">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <br>
+      <h3>Botol Kaca <i class="fas fa-arrow-right"></i></h3>
+      <div class="list-produk" id="listProduk">
+        <!-- 1 -->
+        <div class="card" data-name="frambozen">
+          <img src="img/variant/frambozen.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Frambozen</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=1" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+         <div class="card" data-name="rozen">
+          <img src="img/variant/rozen.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Rozen</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=2" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+         <div class="card" data-name="jeruk keprok">
+          <img src="img/variant/jeruk_keprok.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Jeruk Keprok</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=3" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="card" data-name="jahe">
+          <img src="img/variant/jahe.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Sirup Jahe</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=4" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="card" data-name="melon">
+          <img src="img/variant/melon.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Melon</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=5" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="card" data-name="lemon">
+          <img src="img/variant/lemon.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Lemon</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=6" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="card" data-name="kawis">
+          <img src="img/variant/kawis.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Kawis</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=7" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="card" data-name="mocca">
+          <img src="img/variant/mocca.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Mocca</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=8" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class="card" data-name="leci">
+          <img src="img/variant/leci.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Leci</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=9" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 10 -->
+        <div class="card" data-name="nanas">
+          <img src="img/variant/nanas.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Nanas</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=10" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 11 -->
+        <div class="card" data-name="mangga">
+          <img src="img/variant/mangga.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Mangga</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=11" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 12 -->
+        <div class="card" data-name="jambu">
+          <img src="img/variant/jambu.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Jambu</h4>
+            <div class="action">
+              <p class="harga">Rp 21.000</p>
+              <a href="details/detail.html?id=12" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Botol Plastik <i class="fas fa-arrow-right"></i></h3>
+      <div class="list-produk">
+        <!-- 1 -->
+        <div class="card" data-name="frambozen">
+          <img src="img/plastic/frambozen.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Frambozen</h4>
+            <div class="action">
+              <p class="harga">Rp 20.500</p>
+              <a href="details/detail.html?id=13" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+         <div class="card" data-name="rozen">
+          <img src="img/plastic/rozen.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Rozen</h4>
+            <div class="action">
+              <p class="harga">Rp 20.500</p>
+              <a href="details/detail.html?id=14" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+         <div class="card" data-name="jeruk keprok">
+          <img src="img/plastic/jeruk_keprok.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Jeruk Keprok</h4>
+            <div class="action">
+              <p class="harga">Rp 20.500</p>
+              <a href="details/detail.html?id=15" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="card" data-name="mangga">
+          <img src="img/plastic/mangga.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Mangga</h4>
+            <div class="action">
+              <p class="harga">Rp 20.500</p>
+              <a href="details/detail.html?id=16" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="card" data-name="melon">
+          <img src="img/plastic/melon.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Melon</h4>
+            <div class="action">
+              <p class="harga">Rp 20.500</p>
+              <a href="details/detail.html?id=17" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="card" data-name="leci">
+          <img src="img/plastic/leci.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Leci</h4>
+            <div class="action">
+              <p class="harga">Rp 20.500</p>
+              <a href="details/detail.html?id=18" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="card" data-name="kawis">
+          <img src="img/plastic/kawista.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Kawista</h4>
+            <div class="action">
+              <p class="harga">Rp 20.500</p>
+              <a href="details/detail.html?id=19" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="card" data-name="nanas">
+          <img src="img/plastic/nanas.png">
+          <div class="info">
+            <small>600mL</small>
+            <h4>Varian: Nanas</h4>
+            <div class="action">
+              <p class="harga">Rp 20.500</p>
+              <a href="details/detail.html?id=20" class="btn-beli">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="hint">Geser ke kanan untuk melihat produk <i class="fa-solid fa-arrow-right"></i></h4>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-box" id="aboutBox">
+
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. In proin nec aliquam eget.
+          Cras facilisi urna volutpat ullamcorper odio in leo. Nibh nec tortor
+          sed etiam risus pretium diam luctus. Facilisis a tincidunt turpis
+          nunc et quam pretium orci lectus.<br>
+          <br>Lorem ipsum dolor sit amet consectetur. In proin nec aliquam eget.
+          Cras facilisi urna volutpat ullamcorper odio in leo. Nibh nec tortor
+          sed etiam risus pretium diam luctus.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="img/family.png" alt="Produk">
+      </div>
+    </div>
+  </section>
+
+  <section class="keunggulan">
+    <div class="keunggulan-wrap">
+      <div class="keunggulan-text">
+        <h3 class="tag">Keunggulan</h3>
+        <h2>
+          Bawa kamu ke vibe yang lebih baik,<br>
+          sambil nikmatin sirup murni dari buah asli.
+        </h2>
+        <div class="item">
+          <div class="icon"><i class="fas fa-leaf"></i></div>
+          <div>
+            <h4>Fresh dari buahnya</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.
+              Morbi semper accumsan sed vivamus sed felis in.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon"><i class="fas fa-apple-whole"></i></div>
+          <div>
+            <h4>100% Organic Product</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.
+              Morbi semper accumsan sed vivamus sed felis in.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon"><i class="fab fa-pagelines"></i></div>
+          <div>
+            <h4>100% Fresh Buah dan Herbal</h4>
+            <p>Lorem ipsum dolor sit amet consectetur.
+              Morbi semper accumsan sed vivamus sed felis in.</p>
+          </div>
+        </div>
+      </div>
+      <div class="keunggulan-image">
+        <img src="img/sample.png" alt="Fresh Juice">
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>&copy; <span id="year"></span> Sirup Yogas Delima. All rights reserved</p>
+    <p>Made with <i class="fas fa-heart"></i></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
