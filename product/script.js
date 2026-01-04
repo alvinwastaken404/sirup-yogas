@@ -24,7 +24,7 @@ const products = [
     id: "4",
     name: "Varian: Sirup Jahe",
     volume: "600mL",
-    price: "Rp 21.000",
+    price: "Rp 30.000",
     image: "../img/variant/jahe.png"
   },
   {
@@ -80,7 +80,7 @@ const products = [
     id: "12",
     name: "Varian: Jambu",
     volume: "600mL",
-    price: "Rp 21.000",
+    price: "Rp 30.000",
     image: "../img/variant/jambu.png"
   },
   {
@@ -210,3 +210,4 @@ searchInput.addEventListener("input", () => {
 
 renderProducts();
 renderPagination();
+
