@@ -150,7 +150,7 @@ burger.addEventListener("click", () => {
   menu.classList.toggle("show");
 });
 
-const itemsPerPage = 6;
+const itemsPerPage = 8;
 let currentPage = 1;
 let filteredProducts = [...products];
 
@@ -210,4 +210,5 @@ searchInput.addEventListener("input", () => {
 
 renderProducts();
 renderPagination();
+
 
