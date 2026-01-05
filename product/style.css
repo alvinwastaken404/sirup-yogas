@@ -171,7 +171,7 @@ html, body {
 .product-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 280px);
+  grid-template-columns: repeat(4, 280px);
   row-gap: 35px;
 }
 
@@ -404,3 +404,4 @@ footer p {
     font-size: 14px;
   }
 }
+
