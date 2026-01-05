@@ -28,7 +28,7 @@ const products = [
     nama: "Varian: Sirup Jahe",
     deskripsi: "Hangatnya jahe berpadu dengan manis alami, memberi sensasi nyaman di setiap tegukan.",
     gambar: "../img/variant/jahe.png",
-    price: "Rp 21.000",
+    price: "Rp 30.000",
     bg: "#C68642"
   },
   {
@@ -92,7 +92,7 @@ const products = [
     nama: "Varian: Jambu",
     deskripsi: "Rasa jambu yang segar dan ringan, pas untuk minuman sehari-hari.",
     gambar: "../img/variant/jambu.png",
-    price: "Rp 21.000",
+    price: "Rp 30.000",
     bg: "#E84A5F"
   },
   {
@@ -200,4 +200,5 @@ search.addEventListener("input", function () {
 
 burger.addEventListener("click", () => {
   menu.classList.toggle("show");
+
 });
